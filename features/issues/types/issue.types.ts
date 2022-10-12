@@ -3,7 +3,7 @@ export enum IssueLevel {
   warning = "warning",
   error = "error",
 }
-
+// type alias
 export type Issue = {
   id: string;
   projectId: string;
@@ -12,4 +12,5 @@ export type Issue = {
   stack: string;
   level: IssueLevel;
   numEvents: number;
+  numUsers: number;
 };
