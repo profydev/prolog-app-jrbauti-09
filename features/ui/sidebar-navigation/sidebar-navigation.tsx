@@ -7,6 +7,7 @@ import { MenuItemButton } from "./menu-item-button";
 import { MenuItemLink } from "./menu-item-link";
 import { Button } from "@features/ui";
 import { breakpoint, color, space, zIndex } from "@styles/theme";
+import { sendEmail } from "./utils";
 
 const menuItems = [
   { text: "Projects", iconSrc: "/icons/projects.svg", href: Routes.projects },
@@ -193,7 +194,7 @@ export function SidebarNavigation() {
               text="Support"
               iconSrc="/icons/support.svg"
               isCollapsed={isSidebarCollapsed}
-              onClick={() => alert("Support")}
+              onClick={() => sendEmail()}
             />
             <CollapseMenuItem
               text="Collapse"
